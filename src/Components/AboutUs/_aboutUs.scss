@@ -1,0 +1,294 @@
+@import "../../assets/Fonts/Fonts";
+@import "../../assets/breakpoints/breakpoints";
+
+.AboutUs-info {
+  background-color: #e9e0d0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-bottom: 10vh;
+  @include tablets-portrait {
+    grid-template-columns: 100%;
+  }
+  @include smartphone-portrait {
+    grid-template-columns: 100%;
+  }
+}
+.AboutUs-info-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10%;
+  & h1 {
+    @include section-title();
+    margin-top: 7vh;
+    @include smartphone-portrait {
+      font-size: 40px;
+    }
+  }
+  & hr {
+    border: 2px solid #000000;
+    width: 11.45vw;
+    margin-top: 21px;
+    margin-bottom: 37px;
+    @include smartphone-portrait {
+      width: 120px;
+    }
+  }
+  & p {
+    @include section-info();
+    width: 30.69vw;
+    font-weight: 400;
+    margin-bottom: 50px;
+    @include tablets-portrait {
+      width: 50vw;
+    }
+    @include smartphone-portrait {
+      font-size: 14px;
+      width: 85%;
+    }
+  }
+}
+.AboutUs-info-content-text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 18%;
+  @include tablets-portrait {
+    padding-left: 0;
+  }
+  @include smartphone-portrait {
+    padding-left: 0;
+  }
+}
+.AboutUs-info-content-imgs {
+  padding-left: 10%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  & img {
+    width: 12vw;
+    height: 12vw;
+    overflow: hidden;
+    margin: 14px;
+    box-shadow: 4px 2px 12px 0px rgba(50, 50, 50, 0.7);
+    border-radius: 5px;
+    @include tablets-portrait {
+      width: 20vw;
+      height: 20vw;
+    }
+    @include smartphone-portrait {
+      width: 34.6vw;
+      height: 34.6vw;
+    }
+  }
+  @include tablets-portrait {
+    padding-left: 0;
+  }
+  @include smartphone-portrait {
+    width: 80%;
+    padding-left: 0;
+    grid-template-columns: repeat(2, auto);
+  }
+}
+.AboutUs-info-background {
+  background: url("../assets/imgs/aboutUs.png");
+  background-position: center;
+  transform: scale(0.9);
+  background-repeat: no-repeat;
+  position: relative;
+  clip-path: circle(50% at 50% 50%);
+  box-shadow: 4px 2px 12px 0px rgba(50, 50, 50, 0.7);
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  @include tablets-portrait {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+  }
+}
+
+.AboutUs-review {
+  width: 100%;
+  padding: 10vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &::before {
+    content: "";
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-image: url("../assets/imgs/AboutUs-wallpaper.jpg");
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: contrast(50%);
+    z-index: 1;
+  }
+  @include smartphone-portrait() {
+    width: 100%;
+    padding: 5vh 0 0 0;
+    position: relative;
+    display: block;
+  }
+}
+.AboutUs-review-content {
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  @include smartphone-portrait {
+    grid-template-columns: 1fr;
+  }
+  @include tablets-portrait {
+    grid-template-columns: 1fr;
+  }
+}
+.personel-review {
+  z-index: 1;
+  width: 37.29vw;
+  max-width: 537px;
+  min-height: 467px;
+
+  background: #453e3e;
+  color: white;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  margin-top: -33%;
+  & h1 {
+    @include section-title();
+    margin-top: 65px;
+    @include smartphone-portrait {
+      font-size: 36px;
+      margin-top: 25px;
+    }
+  }
+  & p {
+    @include section-info();
+    font-weight: 300;
+    margin-bottom: 33px;
+    width: 80%;
+    font-size: 18px;
+    @include smartphone-portrait {
+      font-size: 14px;
+    }
+  }
+  @include tablets-portrait {
+    margin-top: 5%;
+    width: 537px;
+  }
+  @include smartphone-portrait {
+    width: 90%;
+    min-height: 317px;
+    margin-left: 5%;
+    padding-bottom: 7vh;
+  }
+}
+#hr1 {
+  width: 210px;
+  border: 1px solid white;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+#hr2 {
+  width: 100px;
+  border: 1px solid white;
+}
+#img2-reviews {
+  z-index: 1;
+  width: 37.29vw;
+  max-width: 537px;
+  height: auto;
+  object-fit: cover;
+  margin-top: 5%;
+  @include smartphone-portrait() {
+    width: 70%;
+    margin-left: 19%;
+    margin-bottom: 5%;
+  }
+}
+#img1-reviews {
+  z-index: 1;
+  width: 42.84vw;
+  max-width: 617px;
+  height: 37.59vh;
+  object-fit: cover;
+  margin-top: 7%;
+  margin-left: 13%;
+  @include smartphone-portrait {
+    display: none;
+  }
+  @include tablets-portrait {
+    display: none;
+  }
+}
+.costumers-reviews {
+  width: 42.84vw;
+  max-width: 617px;
+  margin-left: 13%;
+  background: #cf5a29;
+  z-index: 2;
+  margin-top: -12%;
+  color: #ffffff;
+  margin-left: 13%;
+  min-height: 467px;
+
+  & h1 {
+    @include section-title();
+    margin-top: 65px;
+    @include smartphone-portrait {
+      font-size: 36px;
+      margin-top: 25px;
+    }
+  }
+  & p {
+    @include section-info();
+    font-weight: 300;
+    margin-bottom: 33px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 6%;
+
+    @include smartphone-portrait {
+      font-size: 14px;
+    }
+  }
+  @include tablets-portrait {
+    margin-top: 4%;
+    width: 617px;
+  }
+  @include smartphone-portrait {
+    background: #cf5a29;
+    z-index: 2;
+    width: 80%;
+    min-height: auto;
+    margin-top: 7%;
+    color: #ffffff;
+  }
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.carousel-caption {
+  position: relative !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  top: 90% !important;
+  bottom: 10% !important;
+}

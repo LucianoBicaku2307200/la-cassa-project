@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+
+ul {
+  margin-bottom: 0 !important;
+}
+@import "../Components/NavBar/_navber.scss";
+@import "../Components/Wallpaper/wallpaper";
+@import "../Components/AboutUs/aboutUs";
+@import "../Components/FoodMenu/Menu-homepage";
+@import "../Components/FindUs/findUs";
+@import "../Components/ContuctUs/contuct";

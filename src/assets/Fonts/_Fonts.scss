@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oregano&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap");
+
+@mixin navbar-items {
+  font-size: 19px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+}
+
+@mixin hero-title {
+  font-size: 73px;
+  font-family: "Oregano", cursive;
+  font-weight: 400;
+}
+
+@mixin hero-info {
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+}
+
+@mixin section-title {
+  font-size: 52px;
+  font-family: "Oregano", cursive;
+  font-weight: 500;
+}
+@mixin section-info {
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+}
+@mixin footer-text {
+  font-size: 19px;
+  font-family: "Oregano", cursive;
+  font-weight: 400;
+}
