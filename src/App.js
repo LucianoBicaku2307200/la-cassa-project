@@ -12,8 +12,8 @@ function App() {
 
     <Router>
       <Switch>
-        <Route exact path="/" component={HomePage}></Route>
-        <Route exact path="/menu" component={MenuPage}></Route>
+        <Route exact path="/la-cassa-project/" component={HomePage}></Route>
+        <Route exact path="/la-cassa-project/menu" component={MenuPage}></Route>
         <Route >
           <PageNotFound />
         </Route>
