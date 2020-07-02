@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5a454a4f46047156cd828e7bec5fae78",
+    "revision": "b6772c132e62da9e2c0255b17c62d1cf",
     "url": "/la-cassa-project/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/la-cassa-project/static/css/2.ace36aee.chunk.css"
   },
   {
-    "revision": "e8bc6d6a45ed537e0269",
+    "revision": "be9eb1ff711109746e40",
     "url": "/la-cassa-project/static/css/main.33a5237f.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/la-cassa-project/static/js/2.5e7ef7f8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e8bc6d6a45ed537e0269",
-    "url": "/la-cassa-project/static/js/main.62a5224b.chunk.js"
+    "revision": "be9eb1ff711109746e40",
+    "url": "/la-cassa-project/static/js/main.51c8ed08.chunk.js"
   },
   {
     "revision": "840fcab46ee2f0042499",

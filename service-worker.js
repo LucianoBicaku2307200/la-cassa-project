@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/la-cassa-project/precache-manifest.da5d6fd600762396dfe154c31736e9f3.js"
+  "/la-cassa-project/precache-manifest.449e641a6404ba9342bc255c0af331e2.js"
 );
 
 self.addEventListener('message', (event) => {
