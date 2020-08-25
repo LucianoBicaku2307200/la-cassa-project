@@ -41,6 +41,8 @@ export default function FindUs() {
                 alert("An unknown error occurred.");
                 setShowMap(false);
                 break;
+            default:
+            //do nothing
         }
     }
     let start = useRef(null);

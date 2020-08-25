@@ -1,5 +1,5 @@
 import React from 'react'
-import { Map, Marker, Popup, TileLayer } from "react-leaflet";
+import { Map, Marker, TileLayer } from "react-leaflet";
 export default function MapComponent() {
     const position = [41.3223438, 19.81573963];
     return (

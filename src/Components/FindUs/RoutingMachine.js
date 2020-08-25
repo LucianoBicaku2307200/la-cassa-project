@@ -6,7 +6,6 @@ import { withLeaflet } from "react-leaflet";
 var coords = [];
 function getLocation() {
     navigator.geolocation.getCurrentPosition(showPosition);
-    console.log("punon");
 }
 function showPosition(position) {
     coords.push(position.coords.latitude);

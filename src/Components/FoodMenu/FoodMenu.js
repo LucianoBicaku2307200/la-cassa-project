@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react'
 
-import { TweenMax, Elastic, gsap, Power3 } from 'gsap'
+import { TweenMax, gsap, Power3 } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
